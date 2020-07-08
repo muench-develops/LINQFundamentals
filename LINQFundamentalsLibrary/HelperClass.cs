@@ -6,6 +6,18 @@ using System.Linq;
 
 namespace LINQFundamentalsLibrary
 {
+
+    /// <summary>
+    /// Class for Comparer
+    /// </summary>
+    public class FileInfoComparer : IComparer<FileInfo>
+    {
+        public int Compare(FileInfo x, FileInfo y)
+        {
+            return y.Length.CompareTo(x.Length);
+        }
+    }
+
     public class HelperClass
     {
         /// <summary>
@@ -42,17 +54,6 @@ namespace LINQFundamentalsLibrary
             {
                 Console.WriteLine($"{file.Name} : {file.Length}");
             }
-        }
-    }
-
-    /// <summary>
-    /// Class for Comparer
-    /// </summary>
-    public class FileInfoComparer : IComparer<FileInfo>
-    {
-        public int Compare(FileInfo x, FileInfo y)
-        {
-            return y.Length.CompareTo(x.Length);
         }
     }
 
