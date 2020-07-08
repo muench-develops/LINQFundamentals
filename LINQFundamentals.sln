@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQFundamentalsUI", "LINQFundamentalsUI\LINQFundamentalsUI.csproj", "{5CEFD1D3-41C7-457D-8FB1-2F8A4617E2B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQFundamentalsLibrary", "LINQFundamentalsLibrary\LINQFundamentalsLibrary.csproj", "{9C57C4E3-524D-479E-866D-D0DE11DF3D27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CEFD1D3-41C7-457D-8FB1-2F8A4617E2B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CEFD1D3-41C7-457D-8FB1-2F8A4617E2B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CEFD1D3-41C7-457D-8FB1-2F8A4617E2B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CEFD1D3-41C7-457D-8FB1-2F8A4617E2B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C57C4E3-524D-479E-866D-D0DE11DF3D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C57C4E3-524D-479E-866D-D0DE11DF3D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C57C4E3-524D-479E-866D-D0DE11DF3D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C57C4E3-524D-479E-866D-D0DE11DF3D27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AADCBCFE-ADC2-4C1B-991F-911A0AEB5358}
+	EndGlobalSection
+EndGlobal
