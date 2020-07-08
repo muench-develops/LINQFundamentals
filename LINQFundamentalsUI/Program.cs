@@ -7,10 +7,13 @@ namespace LINQFundamentalsUI
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\JustinM\Desktop\SQL";
-            HelperClass.ShowLargeFilesWithoutLinq(path);
-            Console.WriteLine("****");
-            HelperClass.ShowLargeFilesWithLinq(path);
+            string path = @"C:\";
+
+            HelperClass.ShowFilesWithoutLinq(path);
+
+            Console.WriteLine("****************************");
+
+            HelperClass.ShowFilesWithLinq(path);
             Console.ReadLine();
         }
     }

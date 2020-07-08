@@ -9,17 +9,17 @@ namespace LINQFundamentalsLibrary
     public class HelperClass
     {
         /// <summary>
-        /// Ausgabe von Files ohne Linq
+        /// Shows Files without Linq
         /// </summary>
-        /// <param name="path"></param>
-        public static void ShowLargeFilesWithoutLinq(string path)
+        /// <param name="path">Path to directory</param>
+        public static void ShowFilesWithoutLinq(string path)
         {
 
             DirectoryInfo directory = new DirectoryInfo(path);
             FileInfo[] files = directory.GetFiles();
-
-            //Sort benötigt ein Comparer...
+            
             Array.Sort(files, new FileInfoComparer());
+
             foreach(FileInfo file in files)
             {
                 Console.WriteLine($"{file.Name} : {file.Length}");
@@ -27,16 +27,16 @@ namespace LINQFundamentalsLibrary
         }
 
         /// <summary>
-        /// Ausgabe von Files mit Linq
+        /// Shows Files with Linq
         /// </summary>
-        /// <param name="path"></param>
-        public static void ShowLargeFilesWithLinq(string path)
+        /// <param name="path">Path to directory</param>
+        public static void ShowFilesWithLinq(string path)
         {
-            var query = from file in new DirectoryInfo(path).GetFiles()
-                        orderby file.Length descending
-                        select file;
-
-            //var query = new DirectoryInfo(path).GetFiles().OrderByDescending(f => f.Length).Take(5);
+            //var query = from file in new DirectoryInfo(path).GetFiles()
+            //            orderby file.Length descending
+            //            select file;
+            
+            var query = new DirectoryInfo(path).GetFiles().OrderByDescending(f => f.Length);
 
             foreach (var file in query)
             {
@@ -46,7 +46,7 @@ namespace LINQFundamentalsLibrary
     }
 
     /// <summary>
-    /// Klasse zum Verglechen erstellt
+    /// Class for Comparer
     /// </summary>
     public class FileInfoComparer : IComparer<FileInfo>
     {
